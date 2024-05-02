@@ -12,7 +12,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import { formHelperTextClasses } from '@mui/material/FormHelperText';
 
-import { paths } from 'src/routes/paths';
 import { useRouter } from 'src/routes/hooks';
 
 import { fCurrency, fShortenNumber } from 'src/utils/format-number';
@@ -95,7 +94,7 @@ export default function ProductDetailsSummary({
         });
       }
       onGotoStep?.(0);
-      router.push(paths.product.checkout);
+      // router.push(paths.product.checkout);
     } catch (error) {
       console.error(error);
     }
@@ -257,7 +256,7 @@ export default function ProductDetailsSummary({
         color="warning"
         variant="contained"
         startIcon={<Iconify icon="solar:cart-plus-bold" width={24} />}
-        onClick={handleAddCart}
+        // onClick={handleAddCart}
         sx={{ whiteSpace: 'nowrap' }}
       >
         Add to Cart

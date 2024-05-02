@@ -1,14 +1,14 @@
 import { useState, useCallback } from 'react';
 
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
-import Tabs from '@mui/material/Tabs';
-import Card from '@mui/material/Card';
+// import Tab from '@mui/material/Tab';
+// import Box from '@mui/material/Box';
+// import Tabs from '@mui/material/Tabs';
+// import Card from '@mui/material/Card';
 import Button from '@mui/material/Button';
-import { alpha } from '@mui/material/styles';
+// import { alpha } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
-import Typography from '@mui/material/Typography';
+// import Typography from '@mui/material/Typography';
 
 import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
@@ -20,31 +20,31 @@ import EmptyContent from 'src/components/empty-content';
 import { useSettingsContext } from 'src/components/settings';
 
 import { useCheckoutContext } from '../../checkout/context';
-import ProductDetailsReview from '../product-details-review';
+// import ProductDetailsReview from '../product-details-review';
 import { ProductDetailsSkeleton } from '../product-skeleton';
 import ProductDetailsSummary from '../product-details-summary';
 import ProductDetailsCarousel from '../product-details-carousel';
-import ProductDetailsDescription from '../product-details-description';
+// import ProductDetailsDescription from '../product-details-description';
 
 // ----------------------------------------------------------------------
 
-const SUMMARY = [
-  {
-    title: '100% Original',
-    description: 'Chocolate bar candy canes ice cream toffee cookie halvah.',
-    icon: 'solar:verified-check-bold',
-  },
-  {
-    title: '10 Day Replacement',
-    description: 'Marshmallow biscuit donut dragée fruitcake wafer.',
-    icon: 'solar:clock-circle-bold',
-  },
-  {
-    title: 'Year Warranty',
-    description: 'Cotton candy gingerbread cake I love sugar sweet.',
-    icon: 'solar:shield-check-bold',
-  },
-];
+// const SUMMARY = [
+//   {
+//     title: '100% Original',
+//     description: 'Chocolate bar candy canes ice cream toffee cookie halvah.',
+//     icon: 'solar:verified-check-bold',
+//   },
+//   {
+//     title: '10 Day Replacement',
+//     description: 'Marshmallow biscuit donut dragée fruitcake wafer.',
+//     icon: 'solar:clock-circle-bold',
+//   },
+//   {
+//     title: 'Year Warranty',
+//     description: 'Cotton candy gingerbread cake I love sugar sweet.',
+//     icon: 'solar:shield-check-bold',
+//   },
+// ];
 
 // ----------------------------------------------------------------------
 
@@ -111,7 +111,7 @@ export default function ProductShopDetailsView() {
         </Grid>
       </Grid>
 
-      <Box
+      {/* <Box
         gap={5}
         display="grid"
         gridTemplateColumns={{
@@ -133,9 +133,9 @@ export default function ProductShopDetailsView() {
             </Typography>
           </Box>
         ))}
-      </Box>
+      </Box> */}
 
-      <Card>
+      {/* <Card>
         <Tabs
           value={currentTab}
           onChange={handleChangeTab}
@@ -170,7 +170,7 @@ export default function ProductShopDetailsView() {
             totalReviews={product.totalReviews}
           />
         )}
-      </Card>
+      </Card> */}
     </>
   );
 
