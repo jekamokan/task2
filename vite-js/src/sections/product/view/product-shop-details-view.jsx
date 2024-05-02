@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useState, useCallback } from 'react';
 
 import Tab from '@mui/material/Tab';
@@ -19,7 +18,6 @@ import { useGetProduct } from 'src/api/product';
 import Iconify from 'src/components/iconify';
 import EmptyContent from 'src/components/empty-content';
 import { useSettingsContext } from 'src/components/settings';
-import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 import { useCheckoutContext } from '../../checkout/context';
 import ProductDetailsReview from '../product-details-review';
