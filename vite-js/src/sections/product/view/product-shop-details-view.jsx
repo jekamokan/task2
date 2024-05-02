@@ -1,4 +1,3 @@
-import { useState, useCallback } from 'react';
 
 // import Tab from '@mui/material/Tab';
 // import Box from '@mui/material/Box';
@@ -54,13 +53,13 @@ export default function ProductShopDetailsView() {
 
   const checkout = useCheckoutContext();
 
-  const [currentTab, setCurrentTab] = useState('description');
+  // const [currentTab, setCurrentTab] = useState('description');
 
   const { product, productLoading, productError } = useGetProduct(id);
   // console.log("product", product)
-  const handleChangeTab = useCallback((event, newValue) => {
-    setCurrentTab(newValue);
-  }, []);
+  // const handleChangeTab = useCallback((event, newValue) => {
+  //   setCurrentTab(newValue);
+  // }, []);
 
   const renderSkeleton = <ProductDetailsSkeleton />;
 

@@ -1,5 +1,5 @@
+import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { useEffect, useCallback } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 
 import Box from '@mui/material/Box';
@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Typography from '@mui/material/Typography';
 import { formHelperTextClasses } from '@mui/material/FormHelperText';
 
-import { useRouter } from 'src/routes/hooks';
+// import { useRouter } from 'src/routes/hooks';
 
 import { fCurrency, fShortenNumber } from 'src/utils/format-number';
 
@@ -33,7 +33,7 @@ export default function ProductDetailsSummary({
   disabledActions,
   ...other
 }) {
-  const router = useRouter();
+  // const router = useRouter();
 
   const {
     id,
@@ -100,17 +100,17 @@ export default function ProductDetailsSummary({
     }
   });
 
-  const handleAddCart = useCallback(() => {
-    try {
-      onAddCart?.({
-        ...values,
-        colors: [values.colors],
-        subTotal: values.price * values.quantity,
-      });
-    } catch (error) {
-      console.error(error);
-    }
-  }, [onAddCart, values]);
+  // const handleAddCart = useCallback(() => {
+  //   try {
+  //     onAddCart?.({
+  //       ...values,
+  //       colors: [values.colors],
+  //       subTotal: values.price * values.quantity,
+  //     });
+  //   } catch (error) {
+  //     console.error(error);
+  //   }
+  // }, [onAddCart, values]);
 
   const renderPrice = (
     <Box sx={{ typography: 'h5' }}>
